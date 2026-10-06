@@ -11,6 +11,11 @@ This project scrapes Philips Sonicare and Oral-B electric toothbrush product dat
 
 Run commands from the project root, the folder containing `requirements.txt`. Use the project virtual environment for every command; do not mix it with another Python installation.
 
+## 0. Download and Open the Project
+- Download the project ZIP file.
+- Extract all the files into a folder on your computer.
+- Open the extracted folder in VS Code.
+
 ## 1. Set up the Python environment
 
 Choose **one** of the following options. Both commands assume you are using PowerShell and have Python 3.11 installed.
