@@ -1,0 +1,350 @@
+{
+  "metrics": {
+    "test_questions": 15,
+    "retrieval_hit_rate": 46.67,
+    "format_compliance": 0.0,
+    "citation_presence_rate": 0.0,
+    "product_url_rate": 0.0,
+    "relevance_value_rate": 0.0,
+    "citation_grounding_rate": 0.0,
+    "product_grounding_rate": 0.0,
+    "unsupported_claim_rate": 53.33
+  },
+  "results": [
+    {
+      "id": "Q01",
+      "question": "Which Philips Sonicare product has the highest customer rating?",
+      "query_plan": {
+        "intent": "lookup",
+        "operation": null,
+        "attribute": null,
+        "group_by": null,
+        "brands": [
+          "Philips Sonicare"
+        ],
+        "products": [],
+        "requested_attributes": [
+          "customer_rating"
+        ],
+        "filters": []
+      },
+      "retrieved_documents": 10,
+      "retrieval_hit": true,
+      "format_ok": false,
+      "citations_present": false,
+      "urls_present": false,
+      "relevance_values_valid": false,
+      "citation_grounding_rate": 0.0,
+      "product_grounding_rate": 0.0,
+      "unsupported_claim_rate": 0.0,
+      "unsupported_claims": 0,
+      "rag_relevance": "Relevant",
+      "rag_relevance_reason": "The generated answer directly and completely addresses the user's question by listing the Philips Sonicare products with the highest customer ratings, along with their corresponding ratings and product links. Each product's rating and review information is supported by the retrieved evidence from the Philips website. The answer does not mix information between products and does not introduce unsupported claims. The relevance reasoning is consistent with the supplied evidence.",
+      "answer": "| Product Name | Brand | Feature | Value | Citation | Product Link |\n|---|---|---|---|---|---|\n| Philips One by Sonicare Power Toothbrush | Philips Sonicare | customer_rating | 4.5 | Any customer who has purchased a product online or in store can submit a review Understand product reviews 4.5 of 5 662 Reviews 88% recommend this product 5 4 3 2 1 Write a review Gallie 18/04/2026 US Part of promotion Verified buyer Beautiful Black I love the fact that no batteries required charge and go beautiful case . Mouth feels cleaner and fresh | [Product page](https://www.usa.philips.com/c-p/HY1200_25/philips-one-by-sonicare-power-toothbrush) |\n| Philips Sonicare Series 7100 Rechargeable toothbrush | Philips Sonicare | customer_rating | 4.4 | They allow you to learn more about the product and help you make a purchase decision. Any customer who has purchased a product online or in store can submit a review Understand product reviews 4.4 of 5 114 Reviews 93% recommend this product 5 4 3 2 1 Write a review defnotarobot 23/09/2026 US Part of promotion Verified buyer Absolutely Phenomenal! Word of caution, if you get this you’ll never go back to manual toothbrushing again | [Product page](https://www.usa.philips.com/c-p/HX7420_06/series-7100-rechargeable-toothbrush) |\n| Philips Sonicare Prestige 9900 Rechargeable Toothbrush | Philips Sonicare | customer_rating | 4.2 | Overall, great toothbrush. A cleaning like being at the dentist. The downside is the mess it can make in and around ones sink from the splatter. Be prepared | [Product page](https://www.usa.philips.com/c-p/HX9990_12/sonicare-9900-prestige-power-toothbrush-with-senseiq) |\n| Philips Sonicare 4100 Rechargeable toothbrush | Philips Sonicare | customer_rating | 4.6 | Any customer who has purchased a product online or in store can submit a review Understand product reviews 4.6 of 5 162 Reviews 99% recommend this product 5 4 3 2 1 Write a review the_kirkios 13/09/2026 US Part of promotion Verified buyer Great Philips Sonicare Toothbrush features! This is my second Philips Sonicare Toothbrush. I really enjoy the performance, the durability, and the features | [Product page](https://www.usa.philips.com/c-p/HX4031_72/4100-rechargeable-toothbrush) |\n| Philips Sonicare DiamondClean 9000 Recharge",
+      "unsupported_examples": []
+    },
+    {
+      "id": "Q02",
+      "question": "Which Oral-B product has the highest customer rating?",
+      "query_plan": {
+        "intent": "lookup",
+        "operation": "max",
+        "attribute": "customer_rating",
+        "group_by": null,
+        "brands": [
+          "Oral-B"
+        ],
+        "products": [],
+        "requested_attributes": [
+          "customer_rating"
+        ],
+        "filters": []
+      },
+      "retrieved_documents": 10,
+      "retrieval_hit": true,
+      "format_ok": false,
+      "citations_present": false,
+      "urls_present": false,
+      "relevance_values_valid": false,
+      "citation_grounding_rate": 0.0,
+      "product_grounding_rate": 0.0,
+      "unsupported_claim_rate": 0.0,
+      "unsupported_claims": 0,
+      "rag_relevance": "Relevant",
+      "rag_relevance_reason": "The generated answer directly and completely addresses the user's question by providing the customer rating for the Oral-B iO Series 3 Clean & Protect Rechargeable Electric Toothbrush, Azalea Pink, which is supported by the retrieved evidence.",
+      "answer": "| Product Name | Brand | Feature | Value | Citation | Product Link |\n|---|---|---|---|---|---|\n| Oral-B iO Series 3 Clean & Protect Rechargeable Electric Toothbrush, Azalea Pink | Oral-B | customer_rating | 5.0 | 5.0 | [Product page](https://oralb.com/en-us/products/electric-toothbrushes/oral-b-io-series-3-clean-protect-rechargeable-electric-toothbrush-azalea-pink) |",
+      "unsupported_examples": []
+    },
+    {
+      "id": "Q03",
+      "question": "Which Philips Sonicare product is the cheapest?",
+      "query_plan": {
+        "intent": "lookup",
+        "operation": "min",
+        "attribute": "price_usd",
+        "group_by": null,
+        "brands": [
+          "Philips Sonicare"
+        ],
+        "products": [],
+        "requested_attributes": [
+          "price_usd"
+        ],
+        "filters": []
+      },
+      "retrieved_documents": 10,
+      "retrieval_hit": true,
+      "format_ok": false,
+      "citations_present": false,
+      "urls_present": false,
+      "relevance_values_valid": false,
+      "citation_grounding_rate": 0.0,
+      "product_grounding_rate": 0.0,
+      "unsupported_claim_rate": 0.0,
+      "unsupported_claims": 0,
+      "rag_relevance": "Relevant",
+      "rag_relevance_reason": "The generated answer directly and completely addresses the user's question and its product-specific claims are supported by the retrieved evidence. The answer is focused on the Philips One by Sonicare Power Toothbrush and its price, which is the main topic of the user's question. The evidence from the product page supports the price and other features of the product.",
+      "answer": "| Product Name | Brand | Feature | Value | Citation | Product Link |\n|---|---|---|---|---|---|\n| Philips One by Sonicare Power Toothbrush | Philips Sonicare | price_usd | 39.96 | ? See all benefits $ 39.96 Add to cart Philips One by Sonicare HY1200/25 $ 39.96 Add to cart Where to Buy 2-5 business days Buy this product at: #1 Dental Professional recommended sonic toothbrush brand worldwide Add accessories See all This product Philips One by Sonicare Power Toothbrush $ 39.96 Add Philips One by Sonicare 2-pack brush heads $ 9.96 $ 39.96 Add to cart One up your brushing The One that cleans better The One for on-the-go The One without hassle The One in multiple colors Good | [Product page](https://www.usa.philips.com/c-p/HY1200_25/philips-one-by-sonicare-power-toothbrush) |\n| Philips One by Sonicare Battery Toothbrush | Philips Sonicare | price_usd | 29.96 | ? See all benefits $ 29.96 Add to cart Philips One by Sonicare HY1100/03 $ 29.96 Add to cart Where to Buy 2-5 business days Buy this product at: #1 Dental Professional recommended sonic toothbrush brand worldwide Add accessories See all This product Philips One by Sonicare Battery Toothbrush $ 29.96 Add Philips One by Sonicare 2-pack brush heads $ 9.96 $ 29.96 Add to cart One up your brushing The One that cleans better The One for on-the-go The One without hassle The One in multiple colors Good | [Product page](https://www.usa.philips.com/c-p/HY1100_03/philips-one-by-sonicare-battery-toothbrush) |\n| Philips One by Sonicare Battery Toothbrush | Philips Sonicare | price_usd | 29.96 | ? See all benefits $ 29.96 Add to cart Philips One by Sonicare HY1100/03 $ 29.96 Add to cart Where to Buy 2-5 business days Buy this product at: #1 Dental Professional recommended sonic toothbrush brand worldwide Add accessories See all This product Philips One by Sonicare Battery Toothbrush $ 29.96 Add Philips One by Sonicare 2-pack brush heads $ 9.96 $ 29.96 Add to cart One up your brushing The One that cleans better The One for on-the-go The One without hassle The One in multiple colors Good | [Product page](https://www.usa.philips.com/c-p/HY1100_03/philips-one-by-sonicare-battery-toothbrush) |\n| Philips 1100 Series Sonic electric toothbrush | Philips Sonicare | price_usd | 19.96 |  $",
+      "unsupported_examples": []
+    },
+    {
+      "id": "Q04",
+      "question": "Which Oral-B product is the cheapest?",
+      "query_plan": {
+        "intent": "ranking",
+        "operation": "min",
+        "attribute": "price_usd",
+        "group_by": null,
+        "brands": [
+          "Oral-B"
+        ],
+        "products": [],
+        "requested_attributes": [
+          "price_usd"
+        ],
+        "filters": []
+      },
+      "retrieved_documents": 1,
+      "retrieval_hit": true,
+      "format_ok": false,
+      "citations_present": false,
+      "urls_present": false,
+      "relevance_values_valid": false,
+      "citation_grounding_rate": 0.0,
+      "product_grounding_rate": 0.0,
+      "unsupported_claim_rate": 0.0,
+      "unsupported_claims": 0,
+      "rag_relevance": "Relevant",
+      "rag_relevance_reason": "The answer directly and completely addresses the user's question and its product-specific claims are supported by the retrieved evidence. The answer provides the price of the Oral-B iO Series 4 Rechargeable Electric Toothbrush, Matte White, which is $99.99. The citation provided is from the Oral-B product page, which supports the claim. The answer does not mix information between products and does not introduce unsupported claims.",
+      "answer": "| Product Name | Brand | Feature | Value | Citation | Product Link |\n|---|---|---|---|---|---|\n| Oral-B iO Series 4 Rechargeable Electric Toothbrush, Matte White | Oral-B | price_usd | $99.99 | . Switch to Oral-B Electric Toothbrushes carefree. We offer a 30-day money-back guarantee. Oral-B is the #1 brand most used by dentists worldwide. | [Product page](https://oralb.com/en-us/products/electric-toothbrushes/oral-b-io-series-4-rechargeable-electric-toothbrush-matte-white) |",
+      "unsupported_examples": []
+    },
+    {
+      "id": "Q05",
+      "question": "Which product has the most brush modes?",
+      "error": "HfHubHTTPError: Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6abd9c45-3ac073cb564b4eb53726b33f;49097e4b-46bf-453b-92a6-2eb0b97cfdb9)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.",
+      "retrieval_hit": false,
+      "format_ok": false,
+      "citations_present": false,
+      "urls_present": false,
+      "relevance_values_valid": false,
+      "citation_grounding_rate": 0.0,
+      "product_grounding_rate": 0.0,
+      "unsupported_claim_rate": 1.0,
+      "unsupported_claims": 0
+    },
+    {
+      "id": "Q06",
+      "question": "Compare Philips Sonicare and Oral-B on price and customer rating.",
+      "error": "HfHubHTTPError: Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6abd9c46-173b3f7e6659a8b728471fe9;7b0a5763-343a-47bc-9133-a351b1efc651)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.",
+      "retrieval_hit": false,
+      "format_ok": false,
+      "citations_present": false,
+      "urls_present": false,
+      "relevance_values_valid": false,
+      "citation_grounding_rate": 0.0,
+      "product_grounding_rate": 0.0,
+      "unsupported_claim_rate": 1.0,
+      "unsupported_claims": 0
+    },
+    {
+      "id": "Q07",
+      "question": "Compare Philips Sonicare and Oral-B on brush modes.",
+      "error": "HfHubHTTPError: Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6abd9c47-50da48287a707cf66539be32;e448a409-56eb-4136-b6bd-f49cb9591cc0)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.",
+      "retrieval_hit": false,
+      "format_ok": false,
+      "citations_present": false,
+      "urls_present": false,
+      "relevance_values_valid": false,
+      "citation_grounding_rate": 0.0,
+      "product_grounding_rate": 0.0,
+      "unsupported_claim_rate": 1.0,
+      "unsupported_claims": 0
+    },
+    {
+      "id": "Q08",
+      "question": "Compare Philips Sonicare and Oral-B on app connectivity.",
+      "error": "HfHubHTTPError: Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6abd9c48-4e09de3e3e2e660e6308ea95;6f4fa079-e8ca-455c-859e-be02955c10d4)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.",
+      "retrieval_hit": false,
+      "format_ok": false,
+      "citations_present": false,
+      "urls_present": false,
+      "relevance_values_valid": false,
+      "citation_grounding_rate": 0.0,
+      "product_grounding_rate": 0.0,
+      "unsupported_claim_rate": 1.0,
+      "unsupported_claims": 0
+    },
+    {
+      "id": "Q09",
+      "question": "Which products cost more than $100?",
+      "error": "HfHubHTTPError: Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6abd9c49-1a58bc245da0547d2444d8f1;d5ec3e70-2fea-4fd5-9e6a-a4eb0ff91df5)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.",
+      "retrieval_hit": false,
+      "format_ok": false,
+      "citations_present": false,
+      "urls_present": false,
+      "relevance_values_valid": false,
+      "citation_grounding_rate": 0.0,
+      "product_grounding_rate": 0.0,
+      "unsupported_claim_rate": 1.0,
+      "unsupported_claims": 0
+    },
+    {
+      "id": "Q10",
+      "question": "Which products have a customer rating of 4.5 or higher?",
+      "error": "HfHubHTTPError: Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6abd9c4a-0ef2eda1095c3241016a06c2;14274600-fd89-4ec0-afbe-5843194502d4)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.",
+      "retrieval_hit": false,
+      "format_ok": false,
+      "citations_present": false,
+      "urls_present": false,
+      "relevance_values_valid": false,
+      "citation_grounding_rate": 0.0,
+      "product_grounding_rate": 0.0,
+      "unsupported_claim_rate": 1.0,
+      "unsupported_claims": 0
+    },
+    {
+      "id": "Q11",
+      "question": "Which products have more than 1000 customer reviews?",
+      "error": "HfHubHTTPError: Client error '402 Payment Required' for url 'https://router.huggingface.co/v1/chat/completions' (Request ID: Root=1-6abd9c4a-36e2414c68fbb7e95b57f99c;e73d44d6-23ee-4a98-a860-a67fba886f30)\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402\n\nYou have depleted your monthly included credits. Purchase pre-paid credits to continue using Inference Providers. Alternatively, subscribe to PRO to get 20x more included usage.",
+      "retrieval_hit": false,
+      "format_ok": false,
+      "citations_present": false,
+      "urls_present": false,
+      "relevance_values_valid": false,
+      "citation_grounding_rate": 0.0,
+      "product_grounding_rate": 0.0,
+      "unsupported_claim_rate": 1.0,
+      "unsupported_claims": 0
+    },
+    {
+      "id": "Q12",
+      "question": "What are the plaque-related claims for Philips Sonicare products?",
+      "query_plan": {
+        "intent": "general",
+        "operation": null,
+        "attribute": null,
+        "group_by": null,
+        "brands": [],
+        "products": [],
+        "requested_attributes": [],
+        "filters": []
+      },
+      "retrieved_documents": 10,
+      "retrieval_hit": true,
+      "format_ok": false,
+      "citations_present": false,
+      "urls_present": false,
+      "relevance_values_valid": false,
+      "citation_grounding_rate": 0.0,
+      "product_grounding_rate": 0.0,
+      "unsupported_claim_rate": 0.0,
+      "unsupported_claims": 0,
+      "rag_relevance": "Relevant",
+      "rag_relevance_reason": "The generated answer directly and completely addresses the user's question by listing various Philips Sonicare products and their corresponding plaque-related claims, which are supported by the retrieved evidence.",
+      "answer": "| Product Name | Brand | Feature | Value | Citation | Product Link |\n|---|---|---|---|---|---|\n| Philips Sonicare Series 7100 Rechargeable toothbrush | Philips Sonicare | plaque_claims | Up to 1000% more plaque removal* | [\"Up to 1000% more plaque removal*\"] | [Product page](https://www.usa.philips.com/c-p/HX7427_01/series-7100-rechargeable-toothbrush) |\n| Philips Sonicare Series 5700 Rechargeable toothbrush | Philips Sonicare | plaque_claims | 1000% more plaque removal* | [\"1000% more plaque removal*\"] | [Product page](https://www.usa.philips.com/c-p/HX7132_01/series-5700-rechargeable-toothbrush) |\n| Philips Sonicare Prestige 9900 Rechargeable Toothbrush | Philips Sonicare | plaque_claims | 20x more plaque removal* | [\"20x more plaque removal*\"] | [Product page](https://www.usa.philips.com/c-p/HX9990_12/sonicare-9900-prestige-power-toothbrush-with-senseiq) |\n| Philips Sonicare 4100 Rechargeable toothbrush | Philips Sonicare | plaque_claims | Gently removes 700% more plaque | [\"Gently removes 700% more plaque\"] | [Product page](https://www.usa.philips.com/c-p/HX4031_72/4100-rechargeable-toothbrush) |\n| Philips Sonicare DiamondClean 9000 Rechargeable toothbrush | Philips Sonicare | plaque_claims | 10x more plaque removal* | [\"10x more plaque removal*\"] | [Product page](https://www.usa.philips.com/c-p/HX9911_92/diamondclean-9000-rechargeable-toothbrush) |\n| Philips Sonicare DiamondClean Smart 9300 Rechargeable Toothbrush | Philips Sonicare | plaque_claims | 20x more plaque removal* | [\"20x more plaque removal*\"] | [Product page](https://www.usa.philips.com/c-p/HX9903_25/diamondclean-smart-9300-rechargeable-toothbrush) |\n| Philips Sonicare Series 5700 Rechargeable toothbrush | Philips Sonicare | plaque_claims | Not found in the provided US sources. | Not found in the provided US sources. | [Product page](https://www.usa.philips.com/c-p/HX7132_01/series-5700-rechargeable-toothbrush) |\n| Philips Sonicare 4100 Rechargeable toothbrush | Philips Sonicare | plaque_claims | Not found in the provided US sources. | Not found in the provided US sources",
+      "unsupported_examples": []
+    },
+    {
+      "id": "Q13",
+      "question": "What are the gum-related claims for Oral-B products?",
+      "query_plan": {
+        "intent": "lookup",
+        "operation": null,
+        "attribute": null,
+        "group_by": null,
+        "brands": [
+          "Oral-B"
+        ],
+        "products": [],
+        "requested_attributes": [
+          "gum_claims"
+        ],
+        "filters": []
+      },
+      "retrieved_documents": 10,
+      "retrieval_hit": true,
+      "format_ok": false,
+      "citations_present": false,
+      "urls_present": false,
+      "relevance_values_valid": false,
+      "citation_grounding_rate": 0.0,
+      "product_grounding_rate": 0.0,
+      "unsupported_claim_rate": 0.0,
+      "unsupported_claims": 0,
+      "rag_relevance": "Relevant",
+      "rag_relevance_reason": "The generated answer directly and completely addresses the user's question, providing information about the gum-related claims for Oral-B products. The answer is supported by the retrieved evidence, which includes specific claims and values for various Oral-B products. Each citation corresponds to the product and feature shown in that row, and the product links are correct. The answer does not mix information between products and does not introduce unsupported claims. The relevance reasoning is consistent with the supplied evidence.",
+      "answer": "| Product Name | Brand | Feature | Value | Citation | Product Link |\n|---|---|---|---|---|---|\n| Oral-B iO Series 4 Rechargeable Electric Toothbrush, Matte White | Oral-B | gum_claims | FOR HEALTHIER GUMS IN JUST 1 WEEK remove 100% more plaque and even 2.5X in between teeth* with ORAL-B MOST ADVANCED TECHNOLOGY *vs a manual brush. | FOR HEALTHIER GUMS IN JUST 1 WEEK remove 100% more plaque and even 2.5X in between teeth* with ORAL-B MOST ADVANCED TECHNOLOGY *vs a manual brush. | [Product page](https://oralb.com/en-us/products/electric-toothbrushes/oral-b-io-series-4-rechargeable-electric-toothbrush-matte-white) |\n| Oral-B iO Series 5 Customizable Clean Rechargeable Electric Toothbrush, Matte Black | Oral-B | gum_claims | Remove 100% more plaque and even 2.5X as much in between teeth with Oral-B’s most advanced technology for healthier gums in 1 week (vs a manual brush). | Remove 100% more plaque and even 2.5X as much in between teeth with Oral-B’s most advanced technology for healthier gums in 1 week (vs a manual brush). | [Product page](https://oralb.com/en-us/products/electric-toothbrushes/oral-b-io-series-5-customizable-clean-rechargeable-electric-toothbrush-matte-black) |\n| Oral-B iO Series 10 Rechargeable Electric Toothbrush, Cosmic Black | Oral-B | gum_claims | Switch to Oral-B’s most advanced technology for 100% more plaque removal in just 1 week and even 4X more along the gumline vs. | Switch to Oral-B’s most advanced technology for 100% more plaque removal in just 1 week and even 4X more along the gumline vs. | [Product page](https://oralb.com/en-us/products/electric-toothbrushes/io-series-10-rechargeable-electric-toothbrush-cosmic-black) |\n| Oral-B iO Series 8 Electric Toothbrush, Violet Ametrine | Oral-B | gum_claims | In just 1 week REMOVE 100% MORE PLAQUE and GET 3X HEALTHIER GUMS* switching to ORAL-B’s MOST ADVANCED TECHNOLOGY *vs a manual brush. | In just 1 week REMOVE 100% MORE PLAQUE and GET 3X HEALTHIER GUMS* switching to ORAL-B’s MOST ADVANCED TECHNOLOGY *vs a manual brush. | [Product page](https://oralb.com/en-us/products/electric-toothbrushes/io-series-8-electric-toothbrush-violet-ametrine) |\n| Oral-B iO Series",
+      "unsupported_examples": []
+    },
+    {
+      "id": "Q14",
+      "question": "Which products support app connectivity?",
+      "query_plan": {
+        "intent": "filter",
+        "operation": "equals",
+        "attribute": "app_connectivity",
+        "group_by": null,
+        "brands": [],
+        "products": [],
+        "requested_attributes": [
+          "app_connectivity"
+        ],
+        "filters": [
+          {
+            "operator": "=",
+            "value": true
+          }
+        ]
+      },
+      "retrieved_documents": 10,
+      "retrieval_hit": true,
+      "format_ok": false,
+      "citations_present": false,
+      "urls_present": false,
+      "relevance_values_valid": false,
+      "citation_grounding_rate": 0.0,
+      "product_grounding_rate": 0.0,
+      "unsupported_claim_rate": 0.0,
+      "unsupported_claims": 0,
+      "rag_relevance": "Relevant",
+      "rag_relevance_reason": "The generated answer directly and completely addresses the user's question by listing two products that support app connectivity. The product-specific claims are supported by the retrieved evidence, and each citation corresponds to the product and feature shown in that row.",
+      "answer": "| Product Name | Brand | Feature | Value | Citation | Product Link |\n|---|---|---|---|---|---|\n| Philips Sonicare For Kids Sonic electric toothbrush | Philips Sonicare | app_connectivity | Yes | Yes | [Product page](https://www.usa.philips.com/c-p/HX6351_41/sonicare-for-kids-sonic-electric-toothbrush) |\n| iO Series 7 Electric Toothbrush, Black Onyx | Oral-B | app_connectivity | Yes | Yes | [Product page](https://oralb.com/en-us/products/electric-toothbrushes/io-series-7-electric-toothbrush-black) |",
+      "unsupported_examples": []
+    },
+    {
+      "id": "Q15",
+      "question": "Compare Philips Sonicare and Oral-B products using price, rating, and brush modes.",
+      "error": "ReadTimeout: The read operation timed out",
+      "retrieval_hit": false,
+      "format_ok": false,
+      "citations_present": false,
+      "urls_present": false,
+      "relevance_values_valid": false,
+      "citation_grounding_rate": 0.0,
+      "product_grounding_rate": 0.0,
+      "unsupported_claim_rate": 1.0,
+      "unsupported_claims": 0
+    }
+  ]
+}

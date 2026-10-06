@@ -1,0 +1,10 @@
+pandas
+playwright>=1.48
+python-dotenv
+langchain-core
+langchain-chroma
+langchain-huggingface
+langchain-text-splitters
+sentence-transformers
+rank-bm25>=0.2.2
+pydantic>=2.0

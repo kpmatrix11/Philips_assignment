@@ -1,0 +1,37 @@
+﻿Feature_name_in_datasets,Feature_normalized,Meaning
+brand,Brand,The company or manufacturer that sells the electric toothbrush
+product_name,Product Name,The name of the product
+price_usd,Price (in USD),The listed selling price of the product in US dollars.
+product_category,Product Category,The type/category of the product
+customer_rating,Customer Rating,"The average rating given by customers who reviewed the product, typically represented on a scale such as 1–5."
+customer_rating_count,Customer Rating (count),"How many customers rated this product, typically a integer"
+app_connectivity,App Connectivity,"Indicates whether the toothbrush can connect to a mobile application, generally through features such as Bluetooth/app integration."
+short_description,Short Description,"A brief summary describing the main features, benefits, or functionality of the toothbrush."
+long_description,Long Description,Detailed summary of the product
+plaque_claims,Plaque Claim,"A claim made by the manufacturer about the product's ability to remove dental plaque, usually compared with a manual toothbrush or another product."
+gum_claims,Gum Claims,"Manufacturer claims related to gum health, such as helping improve gum care, reduce gum problems, or provide gentler cleaning around the gums."
+brush_modes_count,Brush Mode Count,"The number of different brushing/cleaning modes available on the toothbrush, typically a single digit number"
+product_url,Product Link,"The URL/link to the product's detailed webpage, where users can view additional product information or purchase the product."
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+,,
+brand,,
+product_name,,
+price_usd,,
+product_category,,
+customer_rating,,
+customer_rating_count,,
+app_connectivity,,
+plaque_claims,,
+gum_claims,,
+brush_modes_count,,
+short_description,,
+long_description,,
+product_url,,
