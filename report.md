@@ -90,6 +90,7 @@ The pipeline has two main stages:
 **2.7 Output validation**
    - **LLM-as-a-judge**: Generated answers was verified using another LLM block
    - **Citation** and **Product link** in outout provided acts as additional validation 
+   - Tests can be run on sample of queries using **step4_evaluate_rag.py**
 
 **2.8 Evaluation**
    
